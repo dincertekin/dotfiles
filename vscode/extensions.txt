@@ -1,0 +1,10 @@
+aaron-bond.better-comments
+alexlapwood.hyper-terminal-theme
+beardedbear.beardedicons
+christian-kohler.path-intellisense
+codeium.codeium
+eamodio.gitlens
+esbenp.prettier-vscode
+miguelsolorio.fluent-icons
+naumovs.color-highlight
+oderwat.indent-rainbow
