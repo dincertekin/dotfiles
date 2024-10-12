@@ -1,0 +1,84 @@
+{
+    // Editor Appearance Settings
+    "editor.fontSize": 20,
+    "editor.fontFamily": "Hack Nerd Font Mono",
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorWidth": 2,
+    "editor.smoothScrolling": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.linkedEditing": true,
+    "editor.stickyScroll.enabled": true,
+
+    // Editor Functionality Settings
+    "editor.suggestSelection": "first",
+    "editor.unicodeHighlight.allowedLocales": {
+        "tr": true
+    },
+    "editor.unicodeHighlight.nonBasicASCII": false,
+
+    // Terminal Settings
+    "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "terminal.integrated.smoothScrolling": true,
+
+    // Explorer Settings
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+
+    // Git Settings
+    "git.ignoreMissingGitWarning": true,
+
+    // JavaScript and Prettier Settings
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "prettier.tabWidth": 4,
+
+    // Security Settings
+    "security.workspace.trust.untrustedFiles": "open",
+
+    // Update Settings
+    "update.showReleaseNotes": false,
+
+    // Window Settings
+    "window.commandCenter": true,
+    "window.newWindowProfile": "Default",
+    "workbench.list.smoothScrolling": true,
+    "workbench.startupEditor": "none",
+    "workbench.iconTheme": "bearded-icons",
+    "workbench.colorTheme": "Hyper",
+    "workbench.productIconTheme": "fluent-icons",
+    
+    // Auto Save Settings
+    "files.autoSave": "afterDelay",
+
+    // Settings Sync
+    "settingsSync.ignoredSettings": [
+        "-window.zoomLevel"
+    ],
+
+    // Apply to All Profiles
+    "workbench.settings.applyToAllProfiles": [
+        "editor.fontSize",
+        "editor.fontFamily",
+        "files.autoSave",
+        "editor.cursorSmoothCaretAnimation",
+        "workbench.list.smoothScrolling",
+        "editor.smoothScrolling",
+        "terminal.integrated.smoothScrolling",
+        "editor.cursorBlinking",
+        "editor.bracketPairColorization.enabled",
+        "editor.guides.bracketPairs",
+        "editor.hideCursorInOverviewRuler",
+        "editor.linkedEditing",
+        "editor.stickyScroll.enabled",
+        "editor.tokenColorCustomizations",
+        "editor.unicodeHighlight.allowedLocales",
+        "editor.unicodeHighlight.nonBasicASCII",
+        "editor.cursorWidth",
+        "editor.suggestSelection",
+        "terminal.integrated.fontSize",
+    ],
+}
