@@ -1,84 +1,56 @@
 {
-    // Editor Appearance Settings
-    "editor.fontSize": 20,
-    "editor.fontFamily": "Hack Nerd Font Mono",
-    "editor.hideCursorInOverviewRuler": true,
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.cursorBlinking": "smooth",
-    "editor.cursorWidth": 2,
-    "editor.smoothScrolling": true,
-    "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": "active",
-    "editor.linkedEditing": true,
-    "editor.stickyScroll.enabled": true,
-
-    // Editor Functionality Settings
-    "editor.suggestSelection": "first",
-    "editor.unicodeHighlight.allowedLocales": {
-        "tr": true
-    },
-    "editor.unicodeHighlight.nonBasicASCII": false,
-
-    // Terminal Settings
-    "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
-    "terminal.integrated.fontSize": 18,
-    "terminal.integrated.enableMultiLinePasteWarning": "never",
-    "terminal.integrated.smoothScrolling": true,
-
-    // Explorer Settings
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-
-    // Git Settings
-    "git.ignoreMissingGitWarning": true,
-
-    // JavaScript and Prettier Settings
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "prettier.tabWidth": 4,
-
-    // Security Settings
-    "security.workspace.trust.untrustedFiles": "open",
-
-    // Update Settings
-    "update.showReleaseNotes": false,
-
-    // Window Settings
-    "window.commandCenter": true,
-    "window.newWindowProfile": "Default",
-    "workbench.list.smoothScrolling": true,
     "workbench.startupEditor": "none",
-    "workbench.iconTheme": "bearded-icons",
-    "workbench.colorTheme": "Hyper",
-    "workbench.productIconTheme": "fluent-icons",
+    "workbench.list.smoothScrolling": true,
+
+    "window.commandCenter": true,
+    "window.zoomLevel": 1,
+
+    "editor.fontFamily": "'Monaspace Neon', monospace",
+    "editor.fontSize": 16,
+    "editor.fontWeight": "400",
+    "editor.fontVariations": true,
+    "editor.fontLigatures": "'calt', 'liga', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09'",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.smoothScrolling": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.stickyScroll.enabled": true,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
     
-    // Auto Save Settings
+    "terminal.integrated.fontFamily": "'MonaspiceNe NF', monospace",
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.smoothScrolling": true,
+    "terminal.integrated.cursorStyle": "line",
+    
     "files.autoSave": "afterDelay",
-
-    // Settings Sync
+    "files.autoSaveDelay": 1000,
+    
     "settingsSync.ignoredSettings": [
-        "-window.zoomLevel"
-    ],
-
-    // Apply to All Profiles
-    "workbench.settings.applyToAllProfiles": [
-        "editor.fontSize",
+        "-window.zoomLevel",
         "editor.fontFamily",
-        "files.autoSave",
-        "editor.cursorSmoothCaretAnimation",
-        "workbench.list.smoothScrolling",
-        "editor.smoothScrolling",
-        "terminal.integrated.smoothScrolling",
-        "editor.cursorBlinking",
-        "editor.bracketPairColorization.enabled",
-        "editor.guides.bracketPairs",
-        "editor.hideCursorInOverviewRuler",
-        "editor.linkedEditing",
-        "editor.stickyScroll.enabled",
-        "editor.tokenColorCustomizations",
-        "editor.unicodeHighlight.allowedLocales",
-        "editor.unicodeHighlight.nonBasicASCII",
-        "editor.cursorWidth",
-        "editor.suggestSelection",
-        "terminal.integrated.fontSize",
+        "editor.fontSize",
+        "editor.fontLigatures",
+        "editor.fontVariations",
+        "editor.fontWeight",
+        "terminal.integrated.fontFamily",
+        "terminal.integrated.fontWeight",
+        "terminal.integrated.fontSize"
     ],
+    
+    "security.workspace.trust.banner": "never",
+    "security.workspace.trust.emptyWindow": false,
+    "security.workspace.trust.enabled": false,
+    "security.workspace.trust.startupPrompt": "never",
+    "security.workspace.trust.untrustedFiles": "open",
+    
+    "explorer.confirmDelete": false,
+    "explorer.confirmPasteNative": false,
+    "explorer.confirmDragAndDrop": false,
+    
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "GitHub Dark",
+    
+    "javascript.updateImportsOnFileMove.enabled": "always",
+
+    "emulator.emulatorPathWindows": "C:\\Users\\dincertekin\\AppData\\Local\\Android\\Sdk\\emulator",
 }
