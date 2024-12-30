@@ -1,56 +1,30 @@
 {
-    "workbench.startupEditor": "none",
-    "workbench.list.smoothScrolling": true,
-
-    "window.commandCenter": true,
-    "window.zoomLevel": 1,
-
-    "editor.fontFamily": "'Monaspace Neon', monospace",
-    "editor.fontSize": 16,
-    "editor.fontWeight": "400",
-    "editor.fontVariations": true,
-    "editor.fontLigatures": "'calt', 'liga', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09'",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.smoothScrolling": true,
+    "chat.commandCenter.enabled": false,
+    "debug.console.fontSize": 18,
     "editor.cursorBlinking": "smooth",
-    "editor.stickyScroll.enabled": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.fontSize": 18,
+    "editor.guides.bracketPairs": true,
+    "editor.linkedEditing": true,
+    "editor.smoothScrolling": true,
     "editor.unicodeHighlight.ambiguousCharacters": false,
-    
-    "terminal.integrated.fontFamily": "'MonaspiceNe NF', monospace",
-    "terminal.integrated.fontSize": 16,
-    "terminal.integrated.smoothScrolling": true,
-    "terminal.integrated.cursorStyle": "line",
-    
+    "explorer.autoReveal": true,
+    "explorer.confirmDelete": false,
+    "extensions.ignoreRecommendations": true,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1000,
-    
-    "settingsSync.ignoredSettings": [
-        "-window.zoomLevel",
-        "editor.fontFamily",
-        "editor.fontSize",
-        "editor.fontLigatures",
-        "editor.fontVariations",
-        "editor.fontWeight",
-        "terminal.integrated.fontFamily",
-        "terminal.integrated.fontWeight",
-        "terminal.integrated.fontSize"
-    ],
-    
+    "javascript.updateImportsOnFileMove.enabled": "always",
     "security.workspace.trust.banner": "never",
     "security.workspace.trust.emptyWindow": false,
     "security.workspace.trust.enabled": false,
     "security.workspace.trust.startupPrompt": "never",
     "security.workspace.trust.untrustedFiles": "open",
-    
-    "explorer.confirmDelete": false,
-    "explorer.confirmPasteNative": false,
-    "explorer.confirmDragAndDrop": false,
-    
-    "workbench.productIconTheme": "fluent-icons",
-    "workbench.iconTheme": "material-icon-theme",
+    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.smoothScrolling": true,
+    "window.commandCenter": false,
+    "window.zoomLevel": 1,
     "workbench.colorTheme": "GitHub Dark",
-    
-    "javascript.updateImportsOnFileMove.enabled": "always",
-
-    "emulator.emulatorPathWindows": "C:\\Users\\dincertekin\\AppData\\Local\\Android\\Sdk\\emulator",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.list.smoothScrolling": true,
+    "workbench.startupEditor": "none"
 }
