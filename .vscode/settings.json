@@ -8,13 +8,14 @@
     "editor.guides.bracketPairs": true,
     "editor.linkedEditing": true,
     "editor.smoothScrolling": true,
-    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false, // To fix Turkish characters in en_US locale
     "explorer.autoReveal": true,
     "explorer.confirmDelete": false,
-    "extensions.ignoreRecommendations": true,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmPasteNative": false,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1000,
-    "files.trimTrailingWhitespace": true,
+    "files.trimTrailingWhitespace": true, // Remove unnecessary spaces when file saved
     "javascript.updateImportsOnFileMove.enabled": "always",
     "security.workspace.trust.banner": "never",
     "security.workspace.trust.emptyWindow": false,
@@ -22,13 +23,13 @@
     "security.workspace.trust.startupPrompt": "never",
     "security.workspace.trust.untrustedFiles": "open",
     "terminal.integrated.fontFamily": "JetBrains Mono, monospace",
+    "terminal.integrated.fontLigatures": true,
     "terminal.integrated.fontSize": 18,
     "terminal.integrated.smoothScrolling": true,
     "window.commandCenter": false,
     "window.zoomLevel": 1,
-    "workbench.colorTheme": "GitHub Dark",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.list.smoothScrolling": true,
     "workbench.productIconTheme": "fluent-icons",
-    "workbench.startupEditor": "none",
+    "workbench.startupEditor": "none", // Disable welcome screen
 }
