@@ -8,6 +8,7 @@
     "editor.guides.bracketPairs": true,
     "editor.linkedEditing": true,
     "editor.smoothScrolling": true,
+    "editor.stickyScroll.enabled": false,
     "editor.unicodeHighlight.ambiguousCharacters": false, // To fix Turkish characters in en_US locale
     "explorer.autoReveal": true,
     "explorer.confirmDelete": false,
@@ -22,6 +23,7 @@
     "security.workspace.trust.enabled": false,
     "security.workspace.trust.startupPrompt": "never",
     "security.workspace.trust.untrustedFiles": "open",
+    "telemetry.telemetryLevel": "off",
     "terminal.integrated.fontFamily": "JetBrains Mono, monospace",
     "terminal.integrated.fontLigatures": true,
     "terminal.integrated.fontSize": 18,
