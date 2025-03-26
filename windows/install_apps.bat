@@ -1,5 +1,6 @@
 winget install --id=Microsoft.PowerToys -e
-winget install --id=Google.Chrome -e
+winget install --id=Brave.Brave -e
+winget install --id=Spotify.Spotify -e
 winget install --id=voidtools.Everything -e
 winget install --id=EpicGames.EpicGamesLauncher -e
 winget install --id=qBittorrent.qBittorrent -e
