@@ -5,18 +5,14 @@
 # Disable AutoPlay for USB
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers" -Name "DisableAutoplay" -Value 1
 
-# Network & Internet Settings
-# IPv4 and IPv6 DNS settings for Ethernet
+# Network & Internet
 $dnsServers = "9.9.9.9","149.112.112.112" # Quad9 DNS
 Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses $dnsServers
-
-# DNS settings for Wi-Fi
+# Same DNS Servers for Wi-Fi
 Set-DnsClientServerAddress -InterfaceAlias "Wi-Fi" -ServerAddresses $dnsServers
-
-# Random hardware addresses for Wi-Fi
+# Sshh! Private Mode
 Set-NetConnectionProfile -InterfaceAlias "Wi-Fi" -NetworkCategory Private
 
-# Apps Settings
 # Debloating Windows
 Get-AppxPackage *Microsoft.549981C3F5F10* | Remove-AppxPackage # Cortana
 Get-AppxPackage *Microsoft.ZuneMusic* | Remove-AppxPackage
@@ -35,5 +31,5 @@ Get-AppxPackage *Microsoft.GetStarted* | Remove-AppxPackage
 # Diagnostics & Feedback
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection" -Name "AllowTelemetry" -Value 0
 
-# Must Have for Python 3
+# Must Have Alias for Python 3
 Set-Alias -Name python3 -Value python
