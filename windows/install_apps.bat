@@ -13,3 +13,4 @@ winget install --id=Obsidian.Obsidian -e
 winget install --id=Google.AndroidStudio -e
 winget install --id=Microsoft.VisualStudio.2022.Community -e
 winget install --id=Docker.DockerDesktop -e
+winget install --id=WinSCP.WinSCP -e
