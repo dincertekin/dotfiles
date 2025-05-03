@@ -1,7 +1,0 @@
-- Install zsh
-- chsh -s zsh
-- Install ohmyzsh
-- Set theme to Candy
-- Install zsh-autosuggestions, zsh-syntax-highlighting (add to .zshrc)
-- Install nvm and pyenv
-- Install Git and Docker (https://gist.github.com/dehsilvadeveloper/c3bdf0f4cdcc5c177e2fe9be671820c7)
