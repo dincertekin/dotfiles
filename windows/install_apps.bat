@@ -14,3 +14,4 @@ winget install --id=Microsoft.VisualStudio.2022.Community -e
 winget install --id=WinSCP.WinSCP -e
 wsl --install
 winget install --id=Docker.DockerDesktop -e
+winget install JanDeDobbeleer.OhMyPosh -s winget
