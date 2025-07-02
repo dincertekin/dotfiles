@@ -8,7 +8,7 @@ Use executable files to auto-install. *(.ps1, .exe etc.)*
 Or for manual-installation you can copy and paste config files.
 
 ## Operating Systems
-[Windows Settings](windows/)
+[Windows Settings](windows/)  
 [Fedora Settings](fedora/)
 
 ## Applications
