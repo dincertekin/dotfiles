@@ -12,4 +12,5 @@ Or for manual-installation you can copy and paste config files.
 [Fedora Settings](fedora/)
 
 ## Applications
-[Visual Studio Code](.vscode/)
+[Visual Studio Code](.vscode/)  
+[Zed](zed/)
