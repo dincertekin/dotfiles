@@ -1,5 +1,6 @@
 {
     "breadcrumbs.enabled": false,
+    "chat.commandCenter.enabled": false,
     "editor.cursorBlinking": "smooth",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.fontFamily": "'JetBrains Mono', monospace",
@@ -13,9 +14,7 @@
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmPasteNative": false,
     "files.autoSave": "onFocusChange",
-    "settingsSync.ignoredExtensions": [
-        "ms-vscode-remote.remote-wsl"
-    ],
+    "security.workspace.trust.enabled": false, // Important: Enable this on work computers.
     "telemetry.feedback.enabled": false,
     "telemetry.telemetryLevel": "off",
     "terminal.integrated.fontFamily": "'JetBrains Mono', monospace",
