@@ -12,7 +12,11 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "One Dark"
+    "dark": "GitHub Dark Default"
+  },
+  "icon_theme": "Colored Zed Icons Theme Dark",
+  "tabs": {
+    "file_icons": true
   },
   "telemetry": {
     "metrics": false,
