@@ -1,30 +1,30 @@
 {
-    "breadcrumbs.enabled": false,
-    "chat.commandCenter.enabled": false,
-    "editor.cursorBlinking": "smooth",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.fontFamily": "'JetBrains Mono', monospace",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 18,
-    "editor.guides.bracketPairs": true,
-    "editor.guides.bracketPairsHorizontal": true,
-    "editor.linkedEditing": true,
-    "editor.unicodeHighlight.ambiguousCharacters": false,
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmPasteNative": false,
-    "files.autoSave": "onFocusChange",
-    "security.workspace.trust.enabled": false, // Important: Enable this on work computers.
-    "telemetry.feedback.enabled": false,
-    "telemetry.telemetryLevel": "off",
-    "terminal.integrated.fontFamily": "'JetBrains Mono', monospace",
-    "terminal.integrated.fontSize": 16,
-    "terminal.integrated.initialHint": false,
-    "update.showReleaseNotes": false,
-    "window.commandCenter": false,
-    "workbench.colorTheme": "Atom One Dark",
-    "workbench.editor.empty.hint": "hidden",
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.layoutControl.enabled": false,
-    "workbench.startupEditor": "none"
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "'JetBrains Mono', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 18,
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": true,
+  "editor.linkedEditing": true,
+  "editor.unicodeHighlight.ambiguousCharacters": false, // Fix Turkish characters.
+  "editor.wordWrap": "on",
+  "explorer.confirmDelete": false, // Note: Enable this on work computers.
+  "explorer.confirmDragAndDrop": false, // Note: Enable this on work computers.
+  "explorer.confirmPasteNative": false, // Note: Enable this on work computers.
+  "files.autoSave": "onFocusChange",
+  "security.workspace.trust.enabled": false, // Note: Enable this on work computers.
+  "telemetry.feedback.enabled": false,
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.initialHint": false,
+  "update.showReleaseNotes": false,
+  "window.commandCenter": false,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.iconTheme": "vscode-icons"
 }
