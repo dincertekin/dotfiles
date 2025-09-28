@@ -26,7 +26,15 @@
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_size": 18,
   "buffer_font_features": {
-    "calt": true
+    "calt": true // ligatures
+  },
+  "agent": {
+    "default_profile": "write",
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4"
+    },
+    "always_allow_tool_actions": true
   },
   "disable_ai": true
 }
