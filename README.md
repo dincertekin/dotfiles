@@ -9,7 +9,6 @@ Or for manual-installation you can copy and paste config files.
 
 ## Operating Systems
 [Windows Settings](windows/)  
-[Fedora Settings](fedora/)
 
 ## Applications
 [Visual Studio Code](.vscode/)  
