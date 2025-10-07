@@ -7,34 +7,29 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "disable_ai": true,
+  "vim_mode": false,
   "autosave": "on_focus_change",
+  "minimap": {
+    "show": "auto"
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
   "base_keymap": "VSCode",
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "buffer_font_features": {
+    "calt": true
+  },
+  "icon_theme": "Colored Zed Icons Theme Dark",
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "GitHub Dark Default"
+    "dark": "One Dark Pro"
   },
-  "icon_theme": "Colored Zed Icons Theme Dark",
   "tabs": {
     "file_icons": true
-  },
-  "telemetry": {
-    "metrics": false,
-    "diagnostics": false
-  },
-  "ui_font_size": 18,
-  "buffer_font_family": "JetBrains Mono",
-  "buffer_font_size": 18,
-  "buffer_font_features": {
-    "calt": true // ligatures
-  },
-  "agent": {
-    "default_profile": "write",
-    "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-sonnet-4"
-    },
-    "always_allow_tool_actions": true
-  },
-  "disable_ai": true
+  }
 }
