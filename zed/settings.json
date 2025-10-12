@@ -8,7 +8,7 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "disable_ai": true,
-  "vim_mode": false,
+  "vim_mode": true,
   "autosave": "on_focus_change",
   "minimap": {
     "show": "auto"
@@ -19,15 +19,16 @@
   },
   "base_keymap": "VSCode",
   "ui_font_size": 16,
-  "buffer_font_size": 16,
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_size": 18,
   "buffer_font_features": {
     "calt": true
   },
   "icon_theme": "Colored Zed Icons Theme Dark",
   "theme": {
     "mode": "system",
-    "light": "One Light",
-    "dark": "One Dark Pro"
+    "light": "Solarized Light",
+    "dark": "Solarized Dark"
   },
   "tabs": {
     "file_icons": true
