@@ -3,13 +3,13 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "'JetBrains Mono', monospace",
-  "editor.fontLigatures": true,
+  "editor.fontLigatures": false,
   "editor.fontSize": 18,
   "editor.formatOnSave": true,
   "editor.guides.bracketPairs": true,
   "editor.guides.bracketPairsHorizontal": true,
   "editor.linkedEditing": true,
-  "editor.unicodeHighlight.ambiguousCharacters": false, // Fix Turkish characters.
+  "editor.unicodeHighlight.ambiguousCharacters": false, // Fix Turkish characters highlight.
   "editor.wordWrap": "on",
   "explorer.confirmDelete": false, // Note: Enable this on work computers.
   "explorer.confirmDragAndDrop": false, // Note: Enable this on work computers.
@@ -22,9 +22,12 @@
   "terminal.integrated.initialHint": false,
   "update.showReleaseNotes": false,
   "window.commandCenter": false,
+  "workbench.colorTheme": "Solarized Dark", // "Gruvbox Dark Soft" or "Solarized Dark"
   "workbench.editor.empty.hint": "hidden",
+  "workbench.iconTheme": "vscode-icons",
   "workbench.layoutControl.enabled": false,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.settings.editor": "json",
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Atom One Dark",
-  "workbench.iconTheme": "vscode-icons"
+  "settingsSync.ignoredExtensions": ["ms-vscode-remote.remote-wsl"]
 }
