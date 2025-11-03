@@ -1,6 +1,5 @@
 code --install-extension eamodio.gitlens
 code --install-extension esbenp.prettier-vscode
-code --install-extension jdinhlife.gruvbox
 code --install-extension ms-python.debugpy
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
@@ -9,7 +8,6 @@ code --install-extension ms-vscode-remote.remote-wsl
 code --install-extension ms-vscode.live-server
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension rust-lang.rust-analyzer
+code --install-extension tamasfe.even-better-toml
 code --install-extension visualstudioexptteam.vscodeintellicode
-code --install-extension vscode-icons-team.vscode-icons
-code --install-extension vscodevim.vim
 code --install-extension vue.volar
