@@ -1,33 +1,34 @@
 {
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "chat.disableAIFeatures": true,
   "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontFamily": "'JetBrains Mono', monospace",
-  "editor.fontLigatures": false,
+  "editor.fontFamily": "'Cascadia Code', 'SF Mono', monospace",
   "editor.fontSize": 18,
   "editor.formatOnSave": true,
   "editor.guides.bracketPairs": true,
   "editor.guides.bracketPairsHorizontal": true,
   "editor.linkedEditing": true,
-  "editor.unicodeHighlight.ambiguousCharacters": false, // Fix Turkish characters highlight.
+  "editor.smoothScrolling": true,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.wordWrap": "on",
-  "explorer.confirmDelete": false, // Note: Enable this on work computers.
-  "explorer.confirmDragAndDrop": false, // Note: Enable this on work computers.
-  "explorer.confirmPasteNative": false, // Note: Enable this on work computers.
   "files.autoSave": "onFocusChange",
-  "security.workspace.trust.enabled": false, // Note: Enable this on work computers.
+  "files.trimTrailingWhitespace": false,
+  "html.autoClosingTags": true,
+  "settingsSync.ignoredExtensions": ["ms-vscode-remote.remote-wsl"],
   "telemetry.feedback.enabled": false,
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.initialHint": false,
   "update.showReleaseNotes": false,
+  "window.autoDetectColorScheme": true,
   "window.commandCenter": false,
-  "workbench.colorTheme": "Solarized Dark", // "Gruvbox Dark Soft" or "Solarized Dark"
   "workbench.editor.empty.hint": "hidden",
-  "workbench.iconTheme": "vscode-icons",
   "workbench.layoutControl.enabled": false,
-  "workbench.secondarySideBar.defaultVisibility": "hidden",
-  "workbench.settings.editor": "json",
-  "workbench.startupEditor": "none",
-  "settingsSync.ignoredExtensions": ["ms-vscode-remote.remote-wsl"]
+  "workbench.preferredDarkColorTheme": "Default Dark Modern",
+  "workbench.preferredLightColorTheme": "Default Light Modern",
+  "workbench.startupEditor": "none"
 }
