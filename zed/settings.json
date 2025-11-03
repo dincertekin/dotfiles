@@ -1,36 +1,38 @@
-// Zed settings
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
-// command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "disable_ai": true,
-  "vim_mode": true,
+  "agent": {
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "google",
+      "model": "gemini-2.0-flash"
+    },
+    "model_parameters": []
+  },
   "autosave": "on_focus_change",
+  "format_on_save": "on",
+  "soft_wrap": "bounded",
+  "disable_ai": false,
+  "vim_mode": false,
   "minimap": {
     "show": "auto"
   },
-  "telemetry": {
-    "diagnostics": false,
-    "metrics": false
-  },
-  "base_keymap": "VSCode",
+  "agent_buffer_font_size": 14,
+  "ui_font_family": ".SystemUIFont",
   "ui_font_size": 16,
-  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_family": "Cascadia Code",
   "buffer_font_size": 18,
   "buffer_font_features": {
     "calt": true
   },
-  "icon_theme": "Colored Zed Icons Theme Dark",
   "theme": {
     "mode": "system",
-    "light": "Solarized Light",
-    "dark": "Solarized Dark"
+    "light": "One Light",
+    "dark": "One Dark"
   },
   "tabs": {
     "file_icons": true
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
   }
 }
