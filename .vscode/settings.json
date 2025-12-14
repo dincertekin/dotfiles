@@ -27,6 +27,7 @@
   "window.autoDetectColorScheme": true,
   "window.commandCenter": false,
   "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.tabActionLocation": "left",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.layoutControl.enabled": false,
   "workbench.preferredDarkColorTheme": "GitHub Dark Default",
