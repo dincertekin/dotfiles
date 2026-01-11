@@ -12,6 +12,7 @@ code --install-extension ms-vscode.live-server
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension pkief.material-icon-theme
 code --install-extension rust-lang.rust-analyzer
+code --install-extension saoudrizwan.claude-dev
 code --install-extension svelte.svelte-vscode
 code --install-extension tamasfe.even-better-toml
 code --install-extension vscodevim.vim
