@@ -12,37 +12,27 @@
   "soft_wrap": "bounded",
   "colorize_brackets": true,
   "icon_theme": "Colored Zed Icons Theme Dark",
-  "agent": {
-    "default_profile": "ask",
-    "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-sonnet-4-5"
-    },
-    "model_parameters": []
-  },
-  "disable_ai": false,
+  "disable_ai": true,
   "vim_mode": true,
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "buffer_font_features": {
-    "calt": true
+    "calt": false,
   },
-  "agent_ui_font_size": 16,
-  "agent_buffer_font_size": 14,
   "theme": {
-    "mode": "system",
-    "light": "Github Light",
-    "dark": "Github Dark"
+    "mode": "dark",
+    "light": "Gruvbox Light Soft",
+    "dark": "Gruvbox Dark Soft",
   },
   "tabs": {
     "file_icons": true,
-    "close_position": "left"
+    "close_position": "left",
   },
   "minimap": {
-    "show": "auto"
-  }
+    "show": "never",
+  },
 }
