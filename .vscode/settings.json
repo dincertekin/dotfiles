@@ -17,6 +17,7 @@
 	"terminal.integrated.initialHint": false,
 	"update.showReleaseNotes": false,
 	"window.autoDetectColorScheme": true,
+	"window.commandCenter": false,
 	"workbench.activityBar.location": "bottom",
 	"workbench.editor.empty.hint": "hidden",
 	"workbench.editor.tabActionLocation": "left",
