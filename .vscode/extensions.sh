@@ -1,14 +1,15 @@
 code --install-extension bradlc.vscode-tailwindcss
 code --install-extension eamodio.gitlens
 code --install-extension esbenp.prettier-vscode
-code --install-extension github.copilot
 code --install-extension github.copilot-chat
+code --install-extension github.github-vscode-theme
 code --install-extension ms-python.debugpy
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
 code --install-extension ms-python.vscode-python-envs
 code --install-extension ms-vscode.live-server
 code --install-extension ms-vsliveshare.vsliveshare
+code --install-extension pkief.material-icon-theme
 code --install-extension rust-lang.rust-analyzer
 code --install-extension svelte.svelte-vscode
 code --install-extension tamasfe.even-better-toml
