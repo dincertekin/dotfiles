@@ -1,6 +1,6 @@
 {
 	"chat.disableAIFeatures": true,
-	"editor.fontFamily": "'SF Mono', monospace",
+	"editor.fontFamily": "'IBM Plex Mono', 'SF Mono', monospace",
 	"editor.fontSize": 16,
 	"editor.guides.bracketPairs": true,
 	"editor.guides.bracketPairsHorizontal": true,
@@ -17,11 +17,12 @@
 	"terminal.integrated.initialHint": false,
 	"update.showReleaseNotes": false,
 	"window.autoDetectColorScheme": true,
-	"window.commandCenter": false,
+	"workbench.activityBar.location": "bottom",
 	"workbench.editor.empty.hint": "hidden",
 	"workbench.editor.tabActionLocation": "left",
+	"workbench.iconTheme": "material-icon-theme",
 	"workbench.layoutControl.enabled": false,
-	"workbench.preferredDarkColorTheme": "Default Dark Modern",
-	"workbench.preferredLightColorTheme": "Default Light Modern",
+	"workbench.preferredDarkColorTheme": "GitHub Dark",
+	"workbench.preferredLightColorTheme": "GitHub Light",
 	"workbench.startupEditor": "newUntitledFile"
 }
