@@ -1,15 +1,48 @@
-# dotfiles  
-> User-specific application configuration is traditionally stored in so called dotfiles (files whose filename starts with a dot). It is common practice to track dotfiles with a version control system such as Git to keep track of changes and synchronize dotfiles across various hosts. There are various approaches to managing dotfiles (e.g. directly tracking dotfiles in the home directory v.s. storing them in a subdirectory and symlinking/copying/generating files with a shell script or a dedicated tool)
-<br>
-from https://wiki.archlinux.org/title/Dotfiles
+# dotfiles
+My configuration files for every setup I own.
 
-## Installation
-Use executable files to auto-install. *(.ps1, .exe etc.)*  
-Or for manual-installation you can copy and paste config files.
+## Description
+Dotfiles are user-specific configuration files whose names traditionally start with a dot. This repository contains my personal configuration files for the apps and systems I use daily, tracked with Git to keep everything consistent across different machines. You can use the provided scripts for automatic installation or copy the files manually.
 
-## Operating Systems
-[Windows Settings](windows/)  
+## Getting Started
 
-## Applications
-[Visual Studio Code](.vscode/)  
-[Zed](zed/)
+### Dependencies
+* Windows 10 or later
+* Applications you want to configure (VS Code, Zed, etc.)
+
+### Installing
+* Clone the repository:
+```bash
+git clone https://github.com/dincertekin/dotfiles.git
+cd dotfiles/
+```
+
+* Run the auto-installer for your platform:
+```powershell
+./install.ps1
+```
+
+* Or manually copy the config files from the relevant folders to their target locations.
+
+### Executing program
+* For automatic installation, simply run the script and follow any prompts.
+* For manual installation, refer to each application's folder for the config files.
+
+## Help
+If the install script fails, make sure you have the necessary permissions to run `.ps1` files on Windows.
+
+```powershell
+Set-ExecutionPolicy RemoteSigned
+```
+
+## Contents
+
+### Operating Systems
+* [Windows Settings](windows/)
+
+### Applications
+* [Visual Studio Code](.vscode/)
+* [Zed](zed/)
+
+## License
+This project is licensed under the [MIT](LICENSE) License - see the LICENSE.md file for details
