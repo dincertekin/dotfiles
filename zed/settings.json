@@ -7,26 +7,30 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "base_keymap": "VSCode",
   "autosave": "on_focus_change",
   "format_on_save": "on",
+  "disable_ai": true,
   "soft_wrap": "bounded",
   "colorize_brackets": true,
-  "icon_theme": "Colored Zed Icons Theme Dark",
-  "disable_ai": true,
-  "vim_mode": true,
+  "icon_theme": {
+    "mode": "system",
+    "light": "Colored Zed Icons Theme Light",
+    "dark": "Colored Zed Icons Theme Dark",
+  },
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
   },
   "ui_font_size": 16,
   "buffer_font_size": 16,
-  "buffer_font_features": {
-    "calt": false,
-  },
   "theme": {
-    "mode": "dark",
-    "light": "Gruvbox Light Soft",
-    "dark": "Gruvbox Dark Soft",
+    "mode": "system",
+    "light": "Tokyo Night Light",
+    "dark": "Tokyo Night Storm",
   },
   "tabs": {
     "file_icons": true,
