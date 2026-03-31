@@ -11,9 +11,9 @@
     "trust_all_worktrees": true,
   },
   "base_keymap": "VSCode",
+  "vim_mode": false,
   "autosave": "on_focus_change",
   "format_on_save": "on",
-  "disable_ai": true,
   "soft_wrap": "bounded",
   "colorize_brackets": true,
   "icon_theme": {
@@ -29,8 +29,8 @@
   "buffer_font_size": 16,
   "theme": {
     "mode": "system",
-    "light": "Tokyo Night Light",
-    "dark": "Tokyo Night Storm",
+    "light": "One Light",
+    "dark": "0x96f Theme",
   },
   "tabs": {
     "file_icons": true,
@@ -38,5 +38,16 @@
   },
   "minimap": {
     "show": "never",
+  },
+  "disable_ai": true,
+  "agent": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4-6",
+      "enable_thinking": true,
+      "effort": "high",
+    },
+    "favorite_models": [],
+    "model_parameters": [],
   },
 }
