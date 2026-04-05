@@ -1,48 +1,40 @@
 # dotfiles
-My configuration files for every setup I own.
 
-## Description
-Dotfiles are user-specific configuration files whose names traditionally start with a dot. This repository contains my personal configuration files for the apps and systems I use daily, tracked with Git to keep everything consistent across different machines. You can use the provided scripts for automatic installation or copy the files manually.
+![Platform](https://img.shields.io/badge/platform-Windows%2010%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-## Getting Started
+My personal configuration files for the apps and tools I use daily, tracked with Git to stay consistent across machines. Learn more about dotfiles on the [Arch Wiki](https://wiki.archlinux.org/title/Dotfiles).
 
-### Dependencies
-* Windows 10 or later
-* Applications you want to configure (VS Code, Zed, etc.)
+## Contents
 
-### Installing
-* Clone the repository:
-```bash
-git clone https://github.com/dincertekin/dotfiles.git
-cd dotfiles/
-```
+| Category | Config |
+|---|---|
+| OS | [Windows Settings](windows/) |
+| Editor | [VS Code](.vscode/) |
+| Editor | [Zed](zed/) |
 
-* Run the auto-installer for your platform:
-```powershell
-./install.ps1
-```
+## Installation
 
-* Or manually copy the config files from the relevant folders to their target locations.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/dincertekin/dotfiles.git
+   cd dotfiles/
+   ```
 
-### Executing program
-* For automatic installation, simply run the script and follow any prompts.
-* For manual installation, refer to each application's folder for the config files.
+2. Run the auto-installer:
+   ```powershell
+   ./install.ps1
+   ```
 
-## Help
-If the install script fails, make sure you have the necessary permissions to run `.ps1` files on Windows.
+   Or manually copy the config files from each folder to their target locations.
 
+## Troubleshooting
+
+If the install script fails, make sure PowerShell allows script execution:
 ```powershell
 Set-ExecutionPolicy RemoteSigned
 ```
 
-## Contents
-
-### Operating Systems
-* [Windows Settings](windows/)
-
-### Applications
-* [Visual Studio Code](.vscode/)
-* [Zed](zed/)
-
 ## License
-This project is licensed under the [MIT](LICENSE) License - see the LICENSE.md file for details
+
+MIT License — see [LICENSE](./LICENSE) for details.
