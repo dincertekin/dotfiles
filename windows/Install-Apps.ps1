@@ -1,7 +1,7 @@
-# Daily Browse
+# Daily
 winget install --id=Brave.Brave -e
 winget install --id=VideoLAN.VLC -e
-winget install --id 9NCBCSZSJRSB -e --source msstore # Spotify
+winget install --id=9NCBCSZSJRSB -e --source msstore # Spotify
 winget install --id=qBittorrent.qBittorrent -e
 winget install --id=OBSProject.OBSStudio -e
 
