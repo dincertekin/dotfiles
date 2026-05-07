@@ -1,5 +1,4 @@
 # WSL Installation
-# Note: System restart might be required after this command
 wsl --install
 
 # Browser and Daily
@@ -9,9 +8,9 @@ winget install --id=Spotify.Spotify -e --source msstore
 winget install --id=qBittorrent.qBittorrent -e
 
 # System Tools
-winget install --id=M2Team.NanaZip -e
+winget install --id=M2Team.NanaZip -e --source msstore
 winget install --id=voidtools.Everything -e
-winget install --id=Microsoft.PowerToys -e
+winget install --id=Microsoft.PowerToys -e --source msstore
 winget install --id=WinSCP.WinSCP -e
 
 # Development and Writing
