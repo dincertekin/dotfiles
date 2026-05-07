@@ -1,15 +1,24 @@
 # Disable Telemetry
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection" -Name "AllowTelemetry" -Value 0
 
+# Disable Advertising ID
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\AdvertisingInfo" -Name "Enabled" -Value 0
+
+# Disable Activity History
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System" -Name "EnableActivityFeed" -Value 0
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System" -Name "PublishUserActivities" -Value 0
+
 # Disable AutoPlay for USB (against BadUSB)
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers" -Name "DisableAutoplay" -Value 1
 
+# Enable Firewall for all profiles
+Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled True
+
 # Quad9 DNS for Security
-# We use -ErrorAction SilentlyContinue because some devices might not have both Ethernet and Wi-Fi active
 $dnsServers = "9.9.9.9","149.112.112.112"
 Get-NetAdapter | Where-Object { $_.Status -eq "Up" } | Set-DnsClientServerAddress -ServerAddresses $dnsServers -ErrorAction SilentlyContinue
 
-# Debloating
+# Debloat
 $appsToRemove = @(
     "Microsoft.549981C3F5F10",  # Cortana
     "Microsoft.ZuneMusic",
@@ -28,7 +37,7 @@ $appsToRemove = @(
 )
 
 foreach ($app in $appsToRemove) {
-    Get-AppxPackage -Name $app -AllUsers | Remove-AppxPackage -ErrorAction SilentlyContinue
+    Get-AppxPackage -Name $app | Remove-AppxPackage -ErrorAction SilentlyContinue
 }
 
 # Show file extensions
@@ -36,3 +45,6 @@ Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer
 
 # Hide Taskbar Meet Now/Chat icons
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "TaskbarMn" -Value 0
+
+# Disable Sticky Keys prompt
+Set-ItemProperty -Path "HKCU:\Control Panel\Accessibility\StickyKeys" -Name "Flags" -Value "506"
