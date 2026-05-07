@@ -1,8 +1,9 @@
-# Browser and Daily
+# Daily Browse
 winget install --id=Brave.Brave -e
 winget install --id=VideoLAN.VLC -e
 winget install --id 9NCBCSZSJRSB -e --source msstore # Spotify
 winget install --id=qBittorrent.qBittorrent -e
+winget install --id=OBSProject.OBSStudio -e
 
 # System Tools
 winget install --id=9N8G7TSCL18R -e --source msstore # NanaZip
@@ -14,10 +15,9 @@ winget install --id=WinSCP.WinSCP -e
 winget install --id=ZedIndustries.Zed -e
 winget install --id=Microsoft.VisualStudioCode -e --override "/SILENT /mergetasks=!runcode,addcontextmenufiles,addcontextmenufolders,associatewithfiles,addtopath"
 
-# Heavy Development Suites
+# IDE
 winget install --id=Google.AndroidStudio -e
 winget install --id=Microsoft.VisualStudio.2022.Community -e
-winget install --id=OBSProject.OBSStudio -e
 
 # Final Maintenance
 winget upgrade --all
