@@ -10,10 +10,9 @@ winget install --id=voidtools.Everything -e
 winget install --id=XP89DCGQ3K6VLD -e --source msstore # PowerToys
 winget install --id=WinSCP.WinSCP -e
 
-# Development and Writing
+# Development
 winget install --id=ZedIndustries.Zed -e
 winget install --id=Microsoft.VisualStudioCode -e --override "/SILENT /mergetasks=!runcode,addcontextmenufiles,addcontextmenufolders,associatewithfiles,addtopath"
-winget install --id=Obsidian.Obsidian -e
 
 # Heavy Development Suites
 winget install --id=Google.AndroidStudio -e
