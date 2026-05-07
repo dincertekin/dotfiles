@@ -1,6 +1,3 @@
-# WSL Installation
-wsl --install
-
 # Browser and Daily
 winget install --id=Brave.Brave -e
 winget install --id=VideoLAN.VLC -e
@@ -25,3 +22,6 @@ winget install --id=OBSProject.OBSStudio -e
 
 # Final Maintenance
 winget upgrade --all
+
+# WSL Installation
+wsl --install
