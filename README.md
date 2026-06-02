@@ -1,6 +1,5 @@
 # dotfiles
 
-![Platform](https://img.shields.io/badge/platform-Windows%2010%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 My personal configuration files for the apps and tools I use daily, tracked with Git to stay consistent across machines. Learn more about dotfiles on the [Arch Wiki](https://wiki.archlinux.org/title/Dotfiles).
@@ -37,4 +36,4 @@ Set-ExecutionPolicy RemoteSigned
 
 ## License
 
-MIT License — see [LICENSE](./LICENSE) for details.
+MIT License, see [LICENSE](./LICENSE) for details.
