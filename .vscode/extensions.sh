@@ -7,6 +7,8 @@ code --install-extension ms-python.debugpy
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
 code --install-extension ms-python.vscode-python-envs
+code --install-extension ms-vscode-remote.remote-ssh
+code --install-extension ms-vscode-remote.remote-ssh-edit
 code --install-extension ms-vscode.live-server
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension pkief.material-icon-theme
