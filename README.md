@@ -31,7 +31,3 @@ If the install script fails, make sure PowerShell allows script execution:
 ```powershell
 Set-ExecutionPolicy RemoteSigned
 ```
-
-## License
-
-MIT License, see [LICENSE](./LICENSE) for details.
