@@ -1,33 +1,32 @@
 {
-  "base_keymap": "VSCode",
-  "vim_mode": false,
   "autosave": "on_focus_change",
+  "base_keymap": "VSCode",
   "format_on_save": "on",
-  "soft_wrap": "bounded",
-  "colorize_brackets": true,
-  "icon_theme": {
-    "mode": "system",
-    "light": "Colored Zed Icons Theme Light",
-    "dark": "Colored Zed Icons Theme Dark",
-  },
-  "telemetry": {
-    "diagnostics": false,
-    "metrics": false,
-  },
   "session": {
     "trust_all_worktrees": true,
   },
-  "ui_font_size": 14,
-  "buffer_font_size": 14,
-  "theme": {
+  "soft_wrap": "editor_width",
+  "vim_mode": false,
+  "buffer_font_size": 15,
+  "colorize_brackets": true,
+  "icon_theme": {
+    "dark": "Colored Zed Icons Theme Dark",
+    "light": "Colored Zed Icons Theme Light",
     "mode": "system",
-    "light": "GitHub Light",
-    "dark": "GitHub Dark",
+  },
+  "minimap": {
+    "show": "never",
   },
   "tabs": {
-    "file_icons": true,
     "close_position": "left",
+    "file_icons": true,
   },
+  "theme": {
+    "dark": "GitHub Dark Dimmed",
+    "light": "GitHub Light",
+    "mode": "system",
+  },
+  "ui_font_size": 16,
   "collaboration_panel": {
     "dock": "left",
   },
@@ -40,19 +39,32 @@
   "project_panel": {
     "dock": "left",
   },
-  "minimap": {
-    "show": "never",
-  },
-  "disable_ai": true,
   "agent": {
-    "dock": "right",
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-sonnet-4-6",
-      "enable_thinking": true,
       "effort": "high",
+      "enable_thinking": true,
+      "model": "claude-sonnet-4-6",
+      "provider": "zed.dev",
     },
+    "dock": "right",
     "favorite_models": [],
     "model_parameters": [],
+    "sidebar_side": "right",
+  },
+  "disable_ai": false,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "profiles": {
+    "Recording": {
+      "settings": {
+        "buffer_font_features": {
+          "calt": false,
+        },
+        "buffer_font_size": 19,
+        "theme": "One Dark Pro",
+      },
+    },
   },
 }
