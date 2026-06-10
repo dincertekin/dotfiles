@@ -3,7 +3,6 @@
         "files.trimTrailingWhitespace": false
     },
     "chat.disableAIFeatures": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.fontFamily": "'Cascadia Mono', 'SF Mono', monospace",
     "editor.formatOnSave": true,
     "editor.guides.bracketPairs": "active",
@@ -14,7 +13,6 @@
     "files.autoSave": "onFocusChange",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-    "prettier.requireConfig": true,
     "security.workspace.trust.enabled": false,
     "svelte.enable-ts-plugin": true,
     "telemetry.feedback.enabled": false,
@@ -23,11 +21,11 @@
     "update.showReleaseNotes": false,
     "window.autoDetectColorScheme": true,
     "window.commandCenter": false,
+    "workbench.activityBar.location": "bottom",
     "workbench.editor.empty.hint": "hidden",
     "workbench.editor.tabActionLocation": "left",
-    "workbench.iconTheme": "material-icon-theme",
     "workbench.layoutControl.enabled": false,
-    "workbench.preferredDarkColorTheme": "GitHub Dark Dimmed",
-    "workbench.preferredLightColorTheme": "GitHub Light",
+    "workbench.preferredDarkColorTheme": "0x96f",
+    "workbench.preferredLightColorTheme": "Light 2026",
     "workbench.startupEditor": "none"
 }
