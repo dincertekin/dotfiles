@@ -22,8 +22,8 @@
     "file_icons": true,
   },
   "theme": {
-    "dark": "GitHub Dark Dimmed",
-    "light": "GitHub Light",
+    "dark": "0x96f Theme",
+    "light": "One Light",
     "mode": "system",
   },
   "ui_font_size": 16,
@@ -51,7 +51,7 @@
     "model_parameters": [],
     "sidebar_side": "right",
   },
-  "disable_ai": false,
+  "disable_ai": true,
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
@@ -63,7 +63,6 @@
           "calt": false,
         },
         "buffer_font_size": 19,
-        "theme": "One Dark Pro",
       },
     },
   },
