@@ -7,20 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "agent_servers": {
-    "claude-acp": {
-      "default_config_options": {
-        "effort": "default",
-        "mode": "auto",
-      },
-      "type": "registry",
-    },
-  },
   "agent": {
     "sidebar_side": "right",
     "dock": "right",
-    "favorite_models": [],
-    "model_parameters": [],
   },
   "autosave": "on_focus_change",
   "base_keymap": "VSCode",
@@ -32,7 +21,7 @@
     "light": "Colored Zed Icons Theme Light",
     "dark": "Colored Zed Icons Theme Dark",
   },
-  "disable_ai": false,
+  "disable_ai": true,
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
@@ -45,7 +34,7 @@
   "theme": {
     "mode": "system",
     "light": "GitHub Light",
-    "dark": "GitHub Dark Dimmed",
+    "dark": "GitHub Dark",
   },
   "tabs": {
     "file_icons": true,
