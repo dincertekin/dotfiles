@@ -6,7 +6,7 @@ My personal configuration files for the apps and tools I use daily, tracked with
 
 | Category | Config |
 |---|---|
-| OS | [Windows Settings](windows/) |
+| OS | [Windows](windows/) [Nix](nix/) |
 | Editor | [VS Code](.vscode/) |
 | Editor | [Zed](zed/) |
 
