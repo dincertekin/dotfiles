@@ -1,39 +1,44 @@
-# Disable Telemetry
-Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection" -Name "AllowTelemetry" -Value 0
+# Run as Administrator, then sign out or reboot
+
+function Set-Reg($path, $name, $value, $type = "DWord") {
+    if (-not (Test-Path $path)) { New-Item -Path $path -Force | Out-Null }
+    Set-ItemProperty -Path $path -Name $name -Value $value -Type $type
+}
+
+# Disable Telemetry (fully off only on Enterprise/Education, "required only" on Home/Pro)
+Set-Reg "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection" "AllowTelemetry" 0
 
 # Disable Advertising ID
-Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\AdvertisingInfo" -Name "Enabled" -Value 0
+Set-Reg "HKCU:\Software\Microsoft\Windows\CurrentVersion\AdvertisingInfo" "Enabled" 0
 
 # Disable Activity History
-Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System" -Name "EnableActivityFeed" -Value 0
-Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System" -Name "PublishUserActivities" -Value 0
+Set-Reg "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System" "EnableActivityFeed" 0
+Set-Reg "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System" "PublishUserActivities" 0
 
-# Disable AutoPlay for USB (against BadUSB)
-Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers" -Name "DisableAutoplay" -Value 1
+# Disable AutoPlay (stops drives from launching things on their own)
+Set-Reg "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers" "DisableAutoplay" 1
 
 # Enable Firewall for all profiles
 Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled True
 
-# Quad9 DNS for Security
-$dnsServers = "9.9.9.9","149.112.112.112"
+# Quad9 DNS (IPv4 + IPv6) on connected adapters
+$dnsServers = "9.9.9.9","149.112.112.112","2620:fe::fe","2620:fe::9"
 Get-NetAdapter | Where-Object { $_.Status -eq "Up" } | Set-DnsClientServerAddress -ServerAddresses $dnsServers -ErrorAction SilentlyContinue
 
 # Debloat
 $appsToRemove = @(
-    "Microsoft.549981C3F5F10",  # Cortana
-    "Microsoft.ZuneMusic",
-    "Microsoft.ZuneVideo",
-    "Microsoft.People",
-    "Microsoft.PhoneLink",
-    "Microsoft.YourPhone",
-    "Microsoft.News",
-    "Microsoft.BingWeather",
-    "Microsoft.BingSearch",
-    "Microsoft.WindowsMaps",
-    "Microsoft.GetHelp",
-    "Microsoft.GetStarted",
-    "Microsoft.SkypeApp",
-    "Microsoft.Office.OneNote"
+    "Microsoft.ZuneVideo",                     # Movies & TV
+    "Microsoft.YourPhone",                     # Phone Link
+    "Microsoft.BingNews",                      # News
+    "Microsoft.BingWeather",                   # Weather
+    "Microsoft.BingSearch",                    # Bing Search
+    "Microsoft.WindowsMaps",                   # Maps
+    "Microsoft.GetHelp",                       # Get Help
+    "Microsoft.Getstarted",                    # Tips
+    "Microsoft.Office.OneNote",                # OneNote
+    "Microsoft.MicrosoftOfficeHub",            # Microsoft 365 app
+    "Microsoft.MicrosoftSolitaireCollection",  # Solitaire
+    "Clipchamp.Clipchamp"                      # Clipchamp
 )
 
 foreach ($app in $appsToRemove) {
@@ -41,10 +46,10 @@ foreach ($app in $appsToRemove) {
 }
 
 # Show file extensions
-Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "HideFileExt" -Value 0
+Set-Reg "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "HideFileExt" 0
 
-# Hide Taskbar Meet Now/Chat icons
-Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "TaskbarMn" -Value 0
+# Hide Taskbar Chat icon
+Set-Reg "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "TaskbarMn" 0
 
 # Disable Sticky Keys prompt
-Set-ItemProperty -Path "HKCU:\Control Panel\Accessibility\StickyKeys" -Name "Flags" -Value "506"
+Set-Reg "HKCU:\Control Panel\Accessibility\StickyKeys" "Flags" "506" "String"
